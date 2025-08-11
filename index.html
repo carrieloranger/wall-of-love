@@ -6,20 +6,41 @@
   <title>Wall of Love — Substack360</title>
   <meta name="robots" content="noindex" />
   <style>
+    :root {
+      --brand-pink: #ff4f85;
+      --bg: #fff0f5;
+      --text: #111111;
+    }
     html, body {
       margin: 0;
       padding: 0;
-      background: #ffffff;
+      background: var(--bg);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
     }
     .wrap {
       max-width: 1280px;
       margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
       padding: 16px;
+      background: var(--brand-pink);
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      border-radius: 8px 8px 0 0;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 10px;
     }
     iframe#testimonialto-carousel-substack360-tag-all-light {
       width: 100%;
-      min-height: 1000px; /* Make taller if Notion cuts it off */
+      min-height: 1000px; /* Increase if cut off in Notion */
       border: 0;
       display: block;
     }
@@ -27,13 +48,16 @@
 </head>
 <body>
   <div class="wrap">
-    <!-- Testimonial.to Carousel Embed START -->
-    <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-    <iframe id='testimonialto-carousel-substack360-tag-all-light' src="https://embed-v2.testimonial.to/carousel/all/substack360?theme=light&autoplay=on&showmore=on&one-row=on&same-height=on&tag=all&arrowColor=9BA9B4&column-scale=2.5&cc=off" frameborder="0" scrolling="no" width="100%"></iframe>
-    <script type="text/javascript">
-      iFrameResize({ log: false, checkOrigin: false }, '#testimonialto-carousel-substack360-tag-all-light');
-    </script>
-    <!-- Testimonial.to Carousel Embed END -->
+    <div class="header">What Our Clients Say ❤️</div>
+    <div class="card">
+      <!-- Testimonial.to Carousel Embed START -->
+      <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
+      <iframe id='testimonialto-carousel-substack360-tag-all-light' src="https://embed-v2.testimonial.to/carousel/all/substack360?theme=light&autoplay=on&showmore=on&one-row=on&same-height=on&tag=all&arrowColor=9BA9B4&column-scale=2.5&cc=off" frameborder="0" scrolling="no" width="100%"></iframe>
+      <script type="text/javascript">
+        iFrameResize({ log: false, checkOrigin: false }, '#testimonialto-carousel-substack360-tag-all-light');
+      </script>
+      <!-- Testimonial.to Carousel Embed END -->
+    </div>
   </div>
 </body>
 </html>
